@@ -4,11 +4,11 @@
 .svg1{
     position: relative;
     width: 100%;
-    margin-block: u.rem(100);
+    margin-block: u.rem(50);
 }
 .svg2{
     position: relative;
-    margin-block-start: u.rem(100);
+    margin-block-start: u.rem(50);
     width: 100%;
 }
 .section-2{
@@ -25,7 +25,7 @@
     }
     p{
         margin-block: u.rem(10);
-        font-size: u.rem(13);
+        font-size: u.rem(16);
         font-weight: 600;
     }
     .desc{

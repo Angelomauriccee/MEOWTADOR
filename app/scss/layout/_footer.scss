@@ -2,7 +2,7 @@
 
 .footer{
     position: relative;
-    margin-top: u.rem(300);
+    margin-top: u.rem(100);
     background: url('/images/footer.svg');
     width: 100vw;
 height: 80vh;
@@ -18,7 +18,7 @@ background-position: center;
     margin: 0 auto;
     color: white;
     p{
-        font-size: 13px;
+        font-size: 16px;
     }
     h2{
         margin-block: u.rem(5);

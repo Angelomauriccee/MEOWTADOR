@@ -81,17 +81,23 @@ header .icons {
   cursor: default;
   position: absolute;
   z-index: 99999999999;
-  right: 50px;
+  right: 20px;
   top: 5px;
 }
 header .icons .fa-brands {
   cursor: pointer;
   font-size: 1.25rem;
-  margin-inline: 0.9375rem;
+  margin-inline: 0.3125rem;
+}
+@media (min-width: 43.75em) {
+  header .icons .fa-brands {
+    margin-inline: 1.25rem;
+    font-size: 1.875rem;
+  }
 }
 
 .hero {
-  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgba(7, 68, 9, 0.479) 35%, rgba(4, 49, 11, 0.527) 100%), url("/images/hero-image.png");
+  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgba(7, 68, 9, 0.479) 35%, rgba(4, 49, 11, 0.877) 100%), url("/images/hero-image.png");
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -105,16 +111,34 @@ header .icons .fa-brands {
   margin: 0 auto;
   padding-top: 350px;
 }
+@media (min-width: 43.75em) {
+  .hero .content {
+    padding-top: 350px;
+  }
+}
 .hero .content h1 {
   color: white;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+@media (min-width: 43.75em) {
+  .hero .content h1 {
+    transition: 0.5s;
+    font-size: 5rem;
+  }
 }
 .hero .content p {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-block-start: 0.3125rem;
+}
+@media (min-width: 43.75em) {
+  .hero .content p {
+    transition: 0.5s;
+    font-size: 1.5625rem;
+  }
 }
 .hero .content button {
   display: block;
@@ -125,6 +149,11 @@ header .icons .fa-brands {
   font-weight: 400;
   letter-spacing: 1px;
 }
+@media (min-width: 43.75em) {
+  .hero .content .tel-link {
+    font-size: 1.25rem;
+  }
+}
 .hero .content .tel-link .connect {
   margin-inline-end: 0.625rem;
 }
@@ -133,7 +162,7 @@ header .icons .fa-brands {
   border: none;
   outline: none;
   border-radius: 4px;
-  background: transparent;
+  background: #87B949;
   border: 2px solid #87B949;
   letter-spacing: 2px;
   width: -moz-fit-content;
@@ -145,9 +174,15 @@ header .icons .fa-brands {
   font-weight: 700;
   transition: 0.5s;
 }
+@media (min-width: 43.75em) {
+  .hero .content .plc-btn {
+    transition: 0.5s;
+    font-size: 1.5625rem;
+  }
+}
 .hero .content .plc-btn:hover {
   transition: 0.5s;
-  background: #87B949;
+  background: #73c410;
 }
 
 a {
@@ -155,10 +190,8 @@ a {
 }
 
 .svg-wave {
-  position: absolute;
-  left: 50%;
-  top: 95%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: -500px;
   width: 100%;
 }
 @media (min-width: 43.75em) {
@@ -175,7 +208,7 @@ a {
 .section-1 {
   width: var(--center-width);
   margin: 0 auto;
-  margin-top: 12.5rem;
+  margin-top: 6.25rem;
 }
 @media (min-width: 56.25em) {
   .section-1 {
@@ -214,12 +247,12 @@ a {
 .svg1 {
   position: relative;
   width: 100%;
-  margin-block: 6.25rem;
+  margin-block: 3.125rem;
 }
 
 .svg2 {
   position: relative;
-  margin-block-start: 6.25rem;
+  margin-block-start: 3.125rem;
   width: 100%;
 }
 
@@ -240,7 +273,7 @@ a {
 }
 .section-2 p {
   margin-block: 0.625rem;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .section-2 .desc {
@@ -301,7 +334,7 @@ a {
 
 .footer {
   position: relative;
-  margin-top: 18.75rem;
+  margin-top: 6.25rem;
   background: url("/images/footer.svg");
   width: 100vw;
   height: 80vh;
@@ -318,7 +351,7 @@ a {
   color: white;
 }
 .footer .footer-content p {
-  font-size: 13px;
+  font-size: 16px;
 }
 .footer .footer-content h2 {
   margin-block: 0.3125rem;

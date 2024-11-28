@@ -23,17 +23,21 @@ header{
         cursor: default;
         position: absolute;
         z-index: 99999999999;
-        right: 50px;
+        right: 20px;
         top: 5px;
         .fa-brands{
             cursor: pointer;
             font-size: u.rem(20);
-            margin-inline: u.rem(15);
+            margin-inline: u.rem(5);
+            @include u.breakpoint(medium){
+                margin-inline: u.rem(20);
+                font-size: u.rem(30);
+            }
         }
     }
 }
 .hero{
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(7, 68, 9, 0.479) 35%, rgba(4, 49, 11, 0.527) 100%), 
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(7, 68, 9, 0.479) 35%, rgba(4, 49, 11, 0.877) 100%), 
     url('/images/hero-image.png');
 width: 100vw;
 height: 100vh;
@@ -47,16 +51,28 @@ background-position: center;
         width: var(--center-width);
         margin: 0 auto;
         padding-top: 350px;
+        @include u.breakpoint(medium){
+            padding-top: 350px;
+        }
         h1{
             color: white;
             font-weight: 700;
-            font-size: u.rem(80);
+            font-size: u.rem(40);
+            transition: 0.5s;
+            @include u.breakpoint(medium){
+                transition: 0.5s;
+                font-size: u.rem(80);
+            }
         }
         p{
             color: white;
-            font-size: u.rem(20);
+            font-size: u.rem(18);
             font-weight: 400;
             margin-block-start: u.rem(5);
+            @include u.breakpoint(medium){
+                transition: 0.5s;
+                font-size: u.rem(25);
+            }
         }
         button{
             display: block;
@@ -66,6 +82,9 @@ background-position: center;
             font-size: u.rem(14);
             font-weight: 400;
             letter-spacing: 1px;
+            @include u.breakpoint(medium){
+                font-size: u.rem(20);
+            }
             .connect{
                 margin-inline-end: u.rem(10);
             }
@@ -75,7 +94,7 @@ background-position: center;
             border: none;
             outline: none;
             border-radius: 4px;
-            background:transparent;
+            background:#87B949;
             border: 2px solid #87B949;
             letter-spacing: 2px;
             width: fit-content;
@@ -85,10 +104,14 @@ background-position: center;
             text-transform: uppercase;
             font-weight: 700;
             transition: 0.5s;
+            @include u.breakpoint(medium){
+                transition: 0.5s;
+                font-size: u.rem(25);
+            }
         }
         .plc-btn:hover{
             transition: 0.5s;
-            background: #87B949;
+            background: #73c410;
         }
     }
 }
@@ -96,10 +119,8 @@ a{
     color: white;
 }
 .svg-wave{
-    position: absolute;
-    left: 50%;
-    top: 95%;
-    transform: translate(-50%,-50%);
+    position: relative;
+    margin-top: -500px;
     width: 100%;
     @include u.breakpoint(medium){
         top: 90%;
@@ -112,7 +133,7 @@ a{
     
     width: var(--center-width);
     margin: 0 auto;
-    margin-top: u.rem(200);
+    margin-top: u.rem(100);
     @include u.breakpoint(large){
         display: flex;
         justify-content: space-between;

@@ -4,113 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mythos</title>
-   
+    <title>MEOWTADOR</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/favicon.ico" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+    </style>
     <link rel="stylesheet" href="/dist/style.css" />
-    <script src="https://kit.fontawesome.com/b1f6f416f9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b1f6f416f9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <nav>
+        <h1><a href="index.html">CATBULLRUN </a></h1>
+        <p class="placeholder-nav"><a href="#">Placeholder for pump</a></p>
+      </nav>
+
+      <div class="icons">
+        <a href="https://t.me/Catbullrun " target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://x.com/Catbullrun
+        " target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </header>
+
+    <div class="hero zoom-out" id="zoom-out">
+      <div class="content zoom-content" id="zoom-content">
+        <h1>
+          CATBULLRUN<br/>(MEOWTADOR)
+        </h1>
+        <p>Welcome to CATBULLRUN, User</p>
+        <a class="plc-btn" href="#">placeholder for pump C.A</a>
+        <span class="tel-link">
+          <a href="https://t.me/Catbullrun "
+             target="_blank"><i class="connect fa-brands fa-telegram"></i>Connect On Telegram
+            Network</a
+          >
+        </span>
+      </div>
+    </div>
 
 
-    
-      <header>
-        <nav>
-          <h1><a href="index.html">Mythos</a></h1>
-          <p class="placeholder-nav"><a href="#">Placeholder for pump</a></p>
-        </nav>
-  
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </header>
-      
-      <div class="hero zoom-out" id="zoom-out">
-        <div class="content zoom-content" id="zoom-content">
-          <h1>VICOIN</h1>
-          <p>Welcome to Vicoin, User</p>
-          <a class="plc-btn" href="#">placeholder for pump</a>
-          <span class="tel-link">
-            <a href="#"><i class="connect fa-brands fa-telegram"></i>Connect On Telegram Network</a>
-          </span>
-        </div>
+
+    <div class="section-1">
+      <div class="mascot-image">
+        <img
+          class="mascot"
+          src="./images/SVG/mascot.png"
+          alt=""
+          draggable="false"
+        />
       </div>
-      
-      
-        <img class="svg-wave" src="/images/Asset 1.svg" alt="" draggable="false">
-  
-      <div class="section-1">
-        <div class="mascot-image">
-          <img class="mascot" src="./images/SVG/mascot.png" alt="" draggable="false">
+
+      <div class="content">
+        <h3>What is CatBullRun (Meowtador) ?</h3>
+        <div class="headings">
+          <h1>Token Identifies ---</h1>
+          <h1>"MEOWTADOR"</h1>
+          <h1>---Temporal token</h1>
         </div>
-  
-        <div class="content">
-          <h3>What is Vicoin ?</h3>
-          <div class="headings">
-            <h1>Token Identifies</h1>
-          <h1>Vicoin Knight</h1>
-          <h1>Temporal token</h1>
-          </div>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error, vel dolor a nam accusantium aperiam explicabo temporibus dignissimos alias harum nesciunt voluptate debitis unde blanditiis corrupti ex modi repudiandae!"</p>
-        </div>
-  
+        <p>
+          "In the wild, chaotic world of crypto, where the markets surge and
+          crash like unpredictable waves, there emerged a new force — a meme
+          coin born from pure bullish energy. This wasn’t your typical coin.
+          This is a coin that had the spirit of a bull with the cunning agility
+          of a cat"
+        </p>
       </div>
-  
-  
-      <img class="svg1" src="/images/SVG/1.svg" alt="">
-      <div class="section-2">
-        <div class="mascot-image2">
-          <img src="/images/SVG/horse.png" alt="" class="mascot2">
-        </div>
-  
-        <div class="content-sec">
-          <h1>TOKEN</h1>
-        <p>Circulating Supply: 18</p>
-        <p>Total Supply:18</p>
+    </div>
+
+    <img class="svg1" src="/images/SVG/1.svg" alt="" />
+    <div class="section-2">
+      <div class="mascot-image2">
+        <img src="/images/SVG/horse.png" alt="" class="mascot2" />
+      </div>
+
+      <div class="content-sec">
+        <h1>TOKEN</h1>
+        <p>Circulating Supply: 1B</p>
+        <p>Total Supply:1B</p>
         <p>Solana Network</p>
         <p>Transaction Speed: 65,000 TPS</p>
         <p>Liquidity Pool: Active</p>
         <a href="#">Engage Now</a>
-        <p class="desc">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. At architecto est maxime voluptatum repellendus? Recusandae, error laborum doloribus maiores architecto delectus molestiae numquam, odit quae debitis distinctio earum. Inventore, quae?"</p>
-        </div>
-  
+        <p class="desc">
+          "Meowtador isn’t just about riding the bull market. It is about making
+          every run a memorable one. With Meowtador bullish momentum and
+          Whiskers’ playful antics, this coin will quickly gain the loyal
+          following of thrill-seekers, meme lovers, and crypto adventurers all
+          eager to join the ride. "
+        </p>
       </div>
-  
-      <img class="svg2" src="/images/SVG/2.svg" alt="">
-  
-  
-      <div class="last-section">
-        <div class="image-placeholder">
-          <img class="last-sec-image" src="/images/IMG-20241127-WA0073.jpg" alt="">
-          <div class="gradient"></div>
-          <a href="#"><img class="placeholder-btn" src="/images/svg-holder.png" alt=""></a>
-        </div>
-      </div>
-
-
-<div class="footer">
-  <div class="footer-content">
-    <div class="logo">
-      <div class="logo-image"><img src="/images/LOGO.png" alt=""></div>
-      <h1>VICOIN</h1>
     </div>
-    <h2>COPYRIGHT & LEGAL</h2>
-    <p> AURELIA (AUR) is a digital asset based on the Solana blockchain. Investments in VPT are highly speculative and involve significant risk. You should only invest if you understand the risks associated with digital tokens, cryptocurrency, and blockchain technology. Please consult a qualified financial advisor before making any investment decisions.</p>
-  </div>
-</div>
 
+    <img class="svg2" src="/images/SVG/2.svg" alt="" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="last-section">
+      <div class="image-placeholder">
+        <img
+          class="last-sec-image"
+          src="/images/IMG-20241127-WA0073.jpg"
+          alt=""
+        />
+        <div class="gradient"></div>
+        <a href="#"
+          ><img class="placeholder-btn" src="/images/svg-holder.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <div class="logo-image"><img src="/images/LOGO.png" alt="" /></div>
+          <h1>CATBULLRUN (MEOWTADOR)</h1>
+        </div>
+        <h2>COPYRIGHT & LEGAL</h2>
+        <p>
+          CATBULLRUN (MEOWTADOR) is a digital asset based on the Solana
+          blockchain. Investments in VPT are highly speculative and involve
+          significant risk. You should only invest if you understand the risks
+          associated with digital tokens, cryptocurrency, and blockchain
+          technology. Please consult a qualified financial advisor before making
+          any investment decisions.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="/app/js/script.js"></script>
   </body>
-  </html>
+</html>
