@@ -299,7 +299,7 @@ a {
   position: relative;
   width: min(95%, 100rem);
   margin: 0 auto;
-  margin-top: 6.25rem;
+  margin-top: 3.125rem;
 }
 .last-section .gradient {
   width: 100%;
@@ -334,7 +334,7 @@ a {
 
 .footer {
   position: relative;
-  margin-top: 6.25rem;
+  margin-top: 8.125rem;
   background: url("/images/footer.svg");
   width: 100vw;
   height: 80vh;
