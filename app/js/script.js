@@ -35,24 +35,3 @@
 // });
 
 
-const scrolltoTop = document.getElementById('scrolltoTop');
-const targetSection = document.getElementById('targetSection');
-
-// Function to check scroll position
-window.addEventListener('scroll', () => {
-    const targetPosition = targetSection.offsetTop;
-
-    if (window.scrollY >= targetPosition) {
-        scrolltoTop.classList.add('show'); // Add the class to show the button
-    } else {
-        scrolltoTop.classList.remove('show'); // Remove the class to hide the button
-    }
-});
-
-// Function to scroll to top
-scrolltoTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
