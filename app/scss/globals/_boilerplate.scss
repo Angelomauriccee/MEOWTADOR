@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 *,
 *::before,
 *::after {
@@ -18,7 +22,6 @@ html {
 
 body {
   font-family: u.$font;
-  overflow-x: hidden;
   position: relative;
 }
 
