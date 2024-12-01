@@ -164,6 +164,7 @@ header .icons .fa-brands {
 .hero .content .plc-btn {
   margin-block: 0.3125rem;
   border: none;
+  cursor: crosshair;
   outline: none;
   border-radius: 4px;
   background: #87B949;
@@ -184,10 +185,6 @@ header .icons .fa-brands {
     transition: 0.5s;
     font-size: 1.5625rem;
   }
-}
-.hero .content .plc-btn:hover {
-  transition: 0.5s;
-  background: #73c410;
 }
 
 a {
